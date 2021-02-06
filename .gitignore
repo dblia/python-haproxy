@@ -1,0 +1,23 @@
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+
+# vim swap and backup files
+*.swp
+.*
+*~
+
+# git files that we don't want to ignore
+!.gitignore
+
+# Python specific files
+*.py[co]
+
+# Setuptools distribution and build folders.
+/dist/
+/build/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
