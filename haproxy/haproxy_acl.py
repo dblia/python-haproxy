@@ -70,7 +70,7 @@ class HAProxyACL:
 
         """
         res = self._send("show acl {acl_f}".format(acl_f=self.acl_file))
-        if not cmd_succeeded(res):
+        if res and res[0] == self.UNKNOWN_ACL:
             raise CommandExecError(res)
         return True
 
