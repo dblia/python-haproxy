@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=haproxy
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_installchangelogs:
+	dh_installchangelogs CHANGELOG.rst
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -rf debian/python-esroller/usr/bin
