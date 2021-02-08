@@ -41,8 +41,8 @@ next example:
         stats socket /run/haproxy/admin.sock mode 660 level admin
         stats timeout 2m
 
-**NOTE**: The current library has been mostly used from HAProxy versions **1.8+** to **2.0+** and
-Python versions **3.5** to **3.7**.
+**NOTE**: The current library has been mostly used by single process HAProxy setups between
+versions **1.8+** to **2.0+** and Python versions **3.5** to **3.7**.
 
 Installation guide
 ==================
